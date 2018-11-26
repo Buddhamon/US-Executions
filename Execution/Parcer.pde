@@ -1,3 +1,5 @@
+/* @pjs preload="../Data/US_Map.svg"; */
+
 // Reads and Writes US MAP svg file
 class Parcer
 {
@@ -26,7 +28,7 @@ class Parcer
     private void svg_parcer()
     {
         ArrayList<String> buffer = new ArrayList<String>();
-        reader = createReader(svg); 
+        //reader = createReader(svg); 
         //read();
     
         //while(line != null)
