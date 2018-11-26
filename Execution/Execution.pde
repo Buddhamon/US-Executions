@@ -15,7 +15,7 @@ int count = 0;
 boolean test;
 void setup()
 {
-    //parcer = new Parcer();
+    parcer = new Parcer();
     size(1060, 480);
     test = true;
 }
