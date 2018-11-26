@@ -15,7 +15,7 @@ class Parcer
     Parcer()
     {
         //database_parcer();
-        //svg_parcer();        
+        svg_parcer();        
     }
     
     private void database_parcer()
@@ -29,25 +29,25 @@ class Parcer
         reader = createReader(svg); 
         read();
     
-        while(line != null)
-        {
-            if(line.equals("  <path"))
-            {
-                if(svg_data == null)
-                {
-                    svg_data = new ArrayList<String>(buffer);
-                }
-                else
-                {
-                    state_paths.add(new StatePath(buffer));
-                }
-                buffer.clear();
-            }
-            buffer.add(line);
-            read();
-        }
-        buffer.remove(buffer.size()-1);
-        state_paths.add(new StatePath(buffer));
+        //while(line != null)
+        //{
+        //    if(line.equals("  <path"))
+        //    {
+        //        if(svg_data == null)
+        //        {
+        //            svg_data = new ArrayList<String>(buffer);
+        //        }
+        //        else
+        //        {
+        //            state_paths.add(new StatePath(buffer));
+        //        }
+        //        buffer.clear();
+        //    }
+        //    buffer.add(line);
+        //    read();
+        //}
+        //buffer.remove(buffer.size()-1);
+        //state_paths.add(new StatePath(buffer));
     }
     
     // readLine() is called for BufferedReader Object; Try catch is run
