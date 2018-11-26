@@ -24,8 +24,10 @@ void draw()
 { 
     if(test)
     {
-        s = loadShape(svg);
-        shape(s, 260, 100, 500, 300);
+        fill(255,0,0);
+        rect(100, 100, 100, 100);
+        //s = loadShape(svg);
+        //shape(s, 260, 100, 500, 300);
     }
     //if(looping)
     //{
