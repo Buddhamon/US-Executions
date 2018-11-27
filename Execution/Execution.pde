@@ -1,4 +1,4 @@
-String csv = "../Data/Executions(2018 - 1976).csv";
+String csv = "../Data/Executions.csv";
 String svg = "../Data/US_Map.svg";
 String svg_present = "../Output/present.svg";
 String svg_cumulative = "../Output/cumulative.svg";
