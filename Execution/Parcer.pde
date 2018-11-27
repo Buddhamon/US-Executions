@@ -20,7 +20,7 @@ class Parcer
     
     private void database_parcer()
     {
-        db = new Database();
+        db = new Database(true);
     }
     
     private void svg_parcer()
@@ -28,7 +28,8 @@ class Parcer
         ArrayList<String> buffer = new ArrayList<String>();
         String[] lines = loadStrings(svg);
         
-        for (int i = 0 ; i < lines.length; i++) {
+        for (int i = 0 ; i < lines.length; i++) 
+        {
             if(lines[i].equals("  <path"))
             {
                 if(svg_data == null)
