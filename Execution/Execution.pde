@@ -27,55 +27,55 @@ void draw()
         s = loadShape(svg);
         shape(s, 260, 100, 500, 300);
     }
-    //if(looping)
-    //{
-    //    background(30, 30, 30);
-    //    parcer.update(year1, year2);
-    //    parcer.write(svg_present, false);
-    //    parcer.write(svg_cumulative, true);
+    if(looping)
+    {
+        background(30, 30, 30);
+        parcer.update(year1, year2);
+        parcer.write(svg_present, false);
+        parcer.write(svg_cumulative, true);
         
-    //    s = loadShape(svg_present);
-    //    smooth();
-    //    shape(s, 0, 100, 500, 300);
-    //    s = loadShape(svg_cumulative);
-    //    shape(s, 500, 100, 500, 300);
+        s = loadShape(svg_present);
+        smooth();
+        shape(s, 0, 100, 500, 300);
+        s = loadShape(svg_cumulative);
+        shape(s, 500, 100, 500, 300);
         
-    //    // Texts
-    //    fill(210, 20, 20);
+        // Texts
+        fill(210, 20, 20);
         
-    //    // Present Year Executions
-    //    textSize(40);
-    //    text(parcer.total_present, 240, 250);
+        // Present Year Executions
+        textSize(40);
+        text(parcer.total_present, 240, 250);
         
-    //    // Cumulative Executions
-    //    textSize(40);
-    //    text(parcer.total_cumulative, 740, 250); 
+        // Cumulative Executions
+        textSize(40);
+        text(parcer.total_cumulative, 740, 250); 
         
-    //    // Present Date
-    //    textSize(40);
-    //    text(year2, 480, 50); 
+        // Present Date
+        textSize(40);
+        text(year2, 480, 50); 
         
-    //    // Present Death Label
-    //    textSize(20);
-    //    text("Most Annual Executions", 50, 430);
+        // Present Death Label
+        textSize(20);
+        text("Most Annual Executions", 50, 430);
         
-    //    // Cumulative Death Label
-    //    textSize(20);
-    //    text("Cumulative Executions / Population", 550, 430);
+        // Cumulative Death Label
+        textSize(20);
+        text("Cumulative Executions / Population", 550, 430);
         
-    //    year2++;
-    //    if(year2 > 2018)
-    //        year2 = 1976;
+        year2++;
+        if(year2 > 2018)
+            year2 = 1976;
         
-    //    looping = false;
-    //}
-    //else
-    //{
-    //    count++;
-    //    if(count >= 25)
-    //    {
-    //      looping = true;
-    //      count = 0;
-    //    }
-    //}
+        looping = false;
+    }
+    else
+    {
+        count++;
+        if(count >= 25)
+        {
+          looping = true;
+          count = 0;
+        }
+    }
 }
