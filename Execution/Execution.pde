@@ -1,4 +1,4 @@
-/* @pjs preload="../Data/US_Map.svg", "../Data/US_Map.svg"; */
+/* @pjs preload="../Data/US_Map.svg", "../Data/Executions(2018 - 1976).csv"; */
 
 String csv = "../Data/Executions(2018 - 1976).csv";
 String svg = "../Data/US_Map.svg";
