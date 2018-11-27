@@ -1,6 +1,5 @@
 /* 
-    @pjs preload="../Data/US_Map.svg, ../Data/Executions(2018 - 1976).csv";
-         crisp="true"; 
+    @pjs preload="../Data/US_Map.svg";
 */
 
 String csv = "../Data/Executions(2018 - 1976).csv";
