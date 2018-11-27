@@ -52,7 +52,7 @@ void draw()
     else
     {
         count++;
-        if(count >= 25)
+        if(count >= 30)
         {
           looping = true;
           count = 0;
