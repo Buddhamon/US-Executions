@@ -1,3 +1,5 @@
+/* @pjs preload="../Data/1976.png"; */
+
 int year1 = 1976;
 int year2 = 1976;
 int count = 0;
