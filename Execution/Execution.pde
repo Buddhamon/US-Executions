@@ -1,4 +1,3 @@
-
 String csv = "../Data/Executions(2018 - 1976).csv";
 String svg = "../Data/US_Map.svg";
 String svg_present = "../Output/present.svg";
