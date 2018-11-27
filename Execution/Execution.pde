@@ -9,14 +9,16 @@ boolean test;
 void setup()
 {
     size(1060, 480);
-    test = false;
+    test = true;
 }
 
 void draw()
 { 
     if(test)
     {
-        background(0);
+        fileName = "../Data/" + str(year1) + ".png";
+        img = loadImage(fileName);
+        image(img, 0, 0);
         fill(0, 255, 0);
         rect(10, 10, 100, 100);
     }
