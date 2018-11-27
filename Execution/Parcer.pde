@@ -16,7 +16,7 @@ class Parcer
     //Constructor; Reads in svg file; Stores data in svg_data and state_paths
     Parcer()
     {
-        database_parcer();
+        //database_parcer();
         svg_parcer();        
     }
     

@@ -13,7 +13,7 @@ class Database
     Database()
     {
         table = loadTable(csv, "header");
-        int count = 0;
+        //int count = 0;
         //for (TableRow row : table.rows()) 
         //{
         //    states[count] = row.getString("State");
