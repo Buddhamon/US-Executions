@@ -28,25 +28,25 @@ class Parcer
     private void svg_parcer()
     {   
         ArrayList<String> buffer = new ArrayList<String>();
-        //String[] lines = loadStrings(svg);
+        String[] lines = loadStrings(svg);
         
-        //for (int i = 0 ; i < lines.length; i++) {
-        //    if(lines[i].equals("  <path"))
-        //    {
-        //        if(svg_data == null)
-        //        {
-        //            svg_data = new ArrayList<String>(buffer);
-        //        }
-        //        else
-        //        {
-        //            state_paths.add(new StatePath(buffer));
-        //        }
-        //        buffer.clear();
-        //    }
-        //    buffer.add(lines[i]);
-        //}
-        //buffer.remove(buffer.size()-1);
-        //state_paths.add(new StatePath(buffer));
+        for (int i = 0 ; i < lines.length; i++) {
+            if(lines[i].equals("  <path"))
+            {
+                if(svg_data == null)
+                {
+                    svg_data = new ArrayList<String>(buffer);
+                }
+                else
+                {
+                    state_paths.add(new StatePath(buffer));
+                }
+                buffer.clear();
+            }
+            buffer.add(lines[i]);
+        }
+        buffer.remove(buffer.size()-1);
+        state_paths.add(new StatePath(buffer));
     }
     
     // Writes over and updates previous svg
