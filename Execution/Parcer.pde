@@ -15,7 +15,7 @@ class Parcer
     Parcer()
     {
         //database_parcer();
-        svg_parcer();        
+        //svg_parcer();        
     }
     
     private void database_parcer()
