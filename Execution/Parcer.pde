@@ -20,7 +20,7 @@ class Parcer
     
     private void database_parcer()
     {
-        db = new Database(true);
+        db = new Database();
     }
     
     private void svg_parcer()
