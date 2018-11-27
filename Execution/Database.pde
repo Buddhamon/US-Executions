@@ -38,36 +38,36 @@ class Database
             count = 0;
         }
         
-        // Parse Loaded Data
+        //// Parse Loaded Data
         
-        // States
-        for(int i = 0; i < state_count; i++)
-        {
-            states[i] = db[i][0];
-        }
-        // Total Executions
-        for(int i = 0; i < state_count; i++)
-        {
-            total_executions[i] = Integer.parseInt(db[i][1]);
-        }
-        // State Population
-        for(int i = 0; i < state_count; i++)
-        {
-            population[i] = Integer.parseInt(db[i][2]);
-        }
-        // Percent of Population
-        for(int i = 0; i < state_count; i++)
-        {
-            total_percent_executions[i] = Double.parseDouble(db[i][3]);
-        }
-        // Year Data
-        for(int i = 0; i < state_count; i++)
-        {
-            for(int j = 0; j < 43; j++)
-            {
-                years[i][j] = Integer.parseInt(db[i][46-j]);
-            }
-        }
+        //// States
+        //for(int i = 0; i < state_count; i++)
+        //{
+        //    states[i] = db[i][0];
+        //}
+        //// Total Executions
+        //for(int i = 0; i < state_count; i++)
+        //{
+        //    total_executions[i] = Integer.parseInt(db[i][1]);
+        //}
+        //// State Population
+        //for(int i = 0; i < state_count; i++)
+        //{
+        //    population[i] = Integer.parseInt(db[i][2]);
+        //}
+        //// Percent of Population
+        //for(int i = 0; i < state_count; i++)
+        //{
+        //    total_percent_executions[i] = Double.parseDouble(db[i][3]);
+        //}
+        //// Year Data
+        //for(int i = 0; i < state_count; i++)
+        //{
+        //    for(int j = 0; j < 43; j++)
+        //    {
+        //        years[i][j] = Integer.parseInt(db[i][46-j]);
+        //    }
+        //}
     }
     
     public int cumulativeStateExecuted(int year1, int year2)
