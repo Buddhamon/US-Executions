@@ -1,18 +1,27 @@
+/* @pjs preload="../Data/US_Map.svg"; */
+
 int year1 = 1976;
 int year2 = 1976;
 int count = 0;
 boolean looping = true;
 PImage img;
 String fileName;
+boolean test;
 
 void setup()
 {
     size(1060, 480);
+    test = true;
 }
 
 void draw()
 { 
-    if(looping)
+    if(test)
+    {
+        fill(0, 255, 0);
+        rect(10, 10, 100, 100);
+    }
+    else if(looping)
     {   
         fileName = "../Data/" + str(year2) + ".png";
         img = loadImage(fileName);
