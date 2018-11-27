@@ -1,5 +1,3 @@
-/* @pjs preload="../Data/US_Map.svg"; */
-
 int year1 = 1976;
 int year2 = 1976;
 int count = 0;
@@ -18,8 +16,9 @@ void draw()
 { 
     if(test)
     {
-        fill(0, 255, 0);
-        rect(10, 10, 100, 100);
+        background(0);
+        //fill(0, 255, 0);
+        //rect(10, 10, 100, 100);
     }
     //else if(looping)
     //{   
