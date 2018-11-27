@@ -1,5 +1,5 @@
 /* 
-    @pjs preload = "../Data/1976.png, ../Data/1977.png"; 
+    @pjs preload = "../Data/1976.png, ../Data/1977.png, ../Data/1978.png, ../Data/1979.png"; 
 */
 
 int year1 = 1976;
