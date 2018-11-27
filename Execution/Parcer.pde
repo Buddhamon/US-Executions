@@ -1,5 +1,3 @@
-/* @pjs preload="../Data/US_Map.svg"; */
-
 // Reads and Writes US MAP svg file
 class Parcer
 {
