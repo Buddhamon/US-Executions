@@ -1,4 +1,4 @@
-/* @pjs preload="../Data/1976.png"; */
+/* @pjs preload="../Data/1976.png, ../Data/1977.png"; */
 
 int year1 = 1976;
 int year2 = 1976;
@@ -18,7 +18,7 @@ void draw()
 { 
     if(test)
     {
-        fileName = "../Data/" + str(year1) + ".png";
+        fileName = "../Data/" + str(year1+1) + ".png";
         img = loadImage(fileName);
         image(img, 0, 0);
         fill(0, 255, 0);
