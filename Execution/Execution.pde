@@ -1,6 +1,16 @@
 /* 
     @pjs preload = "../Data/1976.png, ../Data/1977.png, ../Data/1978.png, ../Data/1979.png,
-                    ../Data/1980.png, ../Data/1981.png, ../Data/1982.png, ../Data/1983.png"; 
+                    ../Data/1980.png, ../Data/1981.png, ../Data/1982.png, ../Data/1983.png,
+                    ../Data/1981.png, ../Data/1982.png, ../Data/1983.png, ../Data/1984.png,
+                    ../Data/1985.png, ../Data/1986.png, ../Data/1987.png, ../Data/1988.png,
+                    ../Data/1989.png, ../Data/1990.png, ../Data/1991.png, ../Data/1992.png,
+                    ../Data/1993.png, ../Data/1994.png, ../Data/1995.png, ../Data/1996.png,
+                    ../Data/1997.png, ../Data/1998.png, ../Data/1999.png, ../Data/2000.png,
+                    ../Data/2001.png, ../Data/2002.png, ../Data/2003.png, ../Data/2004.png,
+                    ../Data/2005.png, ../Data/2006.png, ../Data/2007.png, ../Data/2008.png,
+                    ../Data/2009.png, ../Data/2010.png, ../Data/2011.png, ../Data/2012.png,
+                    ../Data/2013.png, ../Data/2014.png, ../Data/2015.png, ../Data/2016.png,
+                    ../Data/2017.png, ../Data/2018.png"; 
 */
 
 int year1 = 1976;
@@ -14,7 +24,7 @@ boolean test;
 void setup()
 {
     size(1060, 480);
-    test = true;
+    test = false;
 }
 
 void draw()
