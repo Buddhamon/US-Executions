@@ -38,18 +38,18 @@ class Database
             count = 0;
         }
         
-        //// Parse Loaded Data
+        // Parse Loaded Data
         
-        //// States
-        //for(int i = 0; i < state_count; i++)
-        //{
-        //    states[i] = db[i][0];
-        //}
-        //// Total Executions
-        //for(int i = 0; i < state_count; i++)
-        //{
-        //    total_executions[i] = Integer.parseInt(db[i][1]);
-        //}
+        // States
+        for(int i = 0; i < state_count; i++)
+        {
+            states[i] = db[i][0];
+        }
+        // Total Executions
+        for(int i = 0; i < state_count; i++)
+        {
+            total_executions[i] = Integer.parseInt(db[i][1]);
+        }
         //// State Population
         //for(int i = 0; i < state_count; i++)
         //{
