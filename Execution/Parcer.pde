@@ -16,7 +16,7 @@ class Parcer
     //Constructor; Reads in svg file; Stores data in svg_data and state_paths
     Parcer()
     {
-        database_parcer();
+        //database_parcer();
         svg_parcer();        
     }
     
@@ -27,7 +27,7 @@ class Parcer
     
     private void svg_parcer()
     {   
-        ArrayList<String> buffer = new ArrayList<String>();
+        //ArrayList<String> buffer = new ArrayList<String>();
         //String[] lines = loadStrings(svg);
         
         //for (int i = 0 ; i < lines.length; i++) {
