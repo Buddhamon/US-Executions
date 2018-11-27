@@ -27,7 +27,7 @@ void draw()
         s = loadShape(svg);
         shape(s, 260, 100, 500, 300);
     }
-    if(looping)
+    else if(looping)
     {
         background(30, 30, 30);
         parcer.update(year1, year2);
