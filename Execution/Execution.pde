@@ -17,7 +17,7 @@ void setup()
 {
     parcer = new Parcer();
     size(1060, 480);
-    test = true;
+    test = false;
 }
 
 void draw()

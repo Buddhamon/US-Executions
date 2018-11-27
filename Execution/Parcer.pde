@@ -16,7 +16,7 @@ class Parcer
     //Constructor; Reads in svg file; Stores data in svg_data and state_paths
     Parcer()
     {
-        //database_parcer();
+        database_parcer();
         svg_parcer();        
     }
     
@@ -28,42 +28,25 @@ class Parcer
     private void svg_parcer()
     {   
         ArrayList<String> buffer = new ArrayList<String>();
-        //reader = createReader(svg); 
-        //read();
-    
-        //while(line != null)
-        //{
-        //    if(line.equals("  <path"))
-        //    {
-        //        if(svg_data == null)
-        //        {
-        //            svg_data = new ArrayList<String>(buffer);
-        //        }
-        //        else
-        //        {
-        //            state_paths.add(new StatePath(buffer));
-        //        }
-        //        buffer.clear();
-        //    }
-        //    buffer.add(line);
-        //    read();
-        //}
-        //buffer.remove(buffer.size()-1);
-        //state_paths.add(new StatePath(buffer));
-    }
-    
-    // readLine() is called for BufferedReader Object; Try catch is run
-    private void read()
-    {
-        try
-        {
-            line = reader.readLine();
-        } 
-        catch (IOException e) 
-        {
-            e.printStackTrace();
-            exit();
+        String[] lines = loadStrings(svg);
+        
+        for (int i = 0 ; i < lines.length; i++) {
+            if(lines[i].equals("  <path"))
+            {
+                if(svg_data == null)
+                {
+                    svg_data = new ArrayList<String>(buffer);
+                }
+                else
+                {
+                    state_paths.add(new StatePath(buffer));
+                }
+                buffer.clear();
+            }
+            buffer.add(lines[i]);
         }
+        buffer.remove(buffer.size()-1);
+        state_paths.add(new StatePath(buffer));
     }
     
     // Writes over and updates previous svg
