@@ -17,8 +17,8 @@ void draw()
     if(test)
     {
         background(0);
-        //fill(0, 255, 0);
-        //rect(10, 10, 100, 100);
+        fill(0, 255, 0);
+        rect(10, 10, 100, 100);
     }
     //else if(looping)
     //{   
